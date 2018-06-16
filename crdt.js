@@ -415,6 +415,8 @@ C.updateAndConvertRemoteToLocal = (change) => {
 return C;
 };
 
-if ('undefined' != typeof global)
+if ('undefined' != typeof global) {
+    var alert = ()=>{};
     module.exports = CRDT;
+}
 
